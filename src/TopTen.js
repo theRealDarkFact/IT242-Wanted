@@ -44,7 +44,7 @@ class TopTen extends Component {
           {this.state.data.items.map((item) => {
             return (
               <div>
-                <h4>{item.uid}</h4>
+                <h4>"Name: " {item.uid}</h4>
                 <img src={item.images[0].large} />
               </div>
             );
