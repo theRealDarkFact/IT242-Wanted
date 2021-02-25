@@ -2,3 +2,20 @@
   text-align: center;
 }
 
+img {
+  border: 5px solid palegoldenrod;
+}
+body{
+  background-image: url(./images/background-darkred.jpg)}
+
+h4 {
+  text-align: center;
+  font-size:1.75em;
+  color: lightgrey;
+}
+h3 {
+  text-align: center;
+  font-size:1.25em;
+  color: lightgrey;
+}
+

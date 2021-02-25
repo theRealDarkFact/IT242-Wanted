@@ -37,7 +37,7 @@ class TopTen extends Component {
 
   render() {
     if (this.state.isFetching || !this.state.data) {
-      return <h4>Fetching...</h4>;
+      return <h4>Collecting data from servers...</h4>;
     } else {
       return (
         <div>
@@ -46,7 +46,7 @@ class TopTen extends Component {
               <div>
                 <h4>{item.title}</h4>
                 <img src={item.images[0].large} />
-                <h4>{item.description}</h4>
+                <h3>{item.description}</h3>
               <hr />
               </div>
             );
