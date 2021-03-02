@@ -6,7 +6,7 @@ class TopTen extends Component {
     super(props);
 
     this.fetchData = this.fetchData.bind(this);
-
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       isFetching: false,
       data: null,
@@ -16,6 +16,10 @@ class TopTen extends Component {
   componentDidMount() {
     this.fetchData();
     console.log("fetching...");
+  }
+
+  handleClick(e, url) {
+    window.open(url, "Information", "width=1000,height=800");
   }
 
   fetchData() {
@@ -45,7 +49,7 @@ class TopTen extends Component {
             return (
               <div>
                 <h4>{item.title}</h4>
-                <img src={item.images[0].large} />
+                <img src={item.images[0].large} onClick={(e) => this.handleClick(e, item.url)}/>
                 <h3>{item.description}</h3>
               <hr />
               </div>
