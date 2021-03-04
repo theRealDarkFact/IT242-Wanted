@@ -47,7 +47,7 @@ class TopTen extends Component {
         <div>
           {this.state.data.items.map((item) => {
             return (
-              <div>
+              <div> 
                 <h4>{item.title}</h4>
                 <img src={item.images[0].large} onClick={(e) => this.handleClick(e, item.url)}/>
                 <h3>{item.description}</h3>
