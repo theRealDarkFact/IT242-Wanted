@@ -7,7 +7,8 @@ img {
 }
 
 body{
-  background-image: url(./images/background-darkred.jpg)}
+  background-image: url(./images/background-darkred.jpg)
+}
 
 h4 {
   text-align: center;
@@ -20,4 +21,3 @@ h3 {
   font-size:1.25em;
   color: lightgrey;
 }
-
